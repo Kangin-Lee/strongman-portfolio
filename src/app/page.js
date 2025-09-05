@@ -2,6 +2,9 @@ import Image from "next/image";
 import Introduce from "./layoutComponents/Introduce/Introduce";
 import MenuBar from "./layoutComponents/MenuBar/MenuBar";
 import CoreCompetencies from "./layoutComponents/CoreCompetencies/CoreCompetencies";
+import ContactInfo from "./layoutComponents/ContactInfo/ContactInfo";
+import EducationSection from "./layoutComponents/EducationSection/EducationSection";
+import Blog from "./layoutComponents/Blog/Blog";
 
 export default function Home() {
   return (
@@ -15,6 +18,15 @@ export default function Home() {
 
         {/* 핵심역량 */}
         <CoreCompetencies />
+
+        {/* 블로그 */}
+        <Blog />
+
+        {/* 교육 및 자격 */}
+        <EducationSection />
+
+        {/* 끝인사 + 연락처 + 메일 */}
+        <ContactInfo />
       </main>
     </div>
   );
