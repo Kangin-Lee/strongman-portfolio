@@ -5,11 +5,12 @@ import CoreCompetencies from "./layoutComponents/CoreCompetencies/CoreCompetenci
 import ContactInfo from "./layoutComponents/ContactInfo/ContactInfo";
 import EducationSection from "./layoutComponents/EducationSection/EducationSection";
 import Blog from "./layoutComponents/Blog/Blog";
+import SkillStack from "./layoutComponents/SkillStack/SkillStack";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+    <div>
+      <main className=" w-full min-w-96 max-w-screen-lg min-h-screen mx-auto px-5 md:px-8 lg:px-10 flex flex-col items-center relative ">
         {/* 소개 및 인사 글 컴포넌트 */}
         <Introduce />
 
@@ -18,6 +19,9 @@ export default function Home() {
 
         {/* 핵심역량 */}
         <CoreCompetencies />
+
+        {/* 기술스택 */}
+        <SkillStack />
 
         {/* 블로그 */}
         <Blog />

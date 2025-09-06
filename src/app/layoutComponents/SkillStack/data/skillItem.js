@@ -1,0 +1,53 @@
+export const skillItems = [
+  {
+    id: 1,
+    name: "JavaScript",
+    category: "front",
+    src: "/skill/javascript.svg",
+  },
+  {
+    id: 2,
+    name: "TypeScript",
+    category: "front",
+    src: "/skill/typescript.svg",
+  },
+  { id: 3, name: "Java", category: "back", src: "/skill/java.svg" },
+  { id: 4, name: "SpringBoot", category: "back", src: "/skill/springBoot.svg" },
+  { id: 5, name: "React", category: "front", src: "/skill/react.svg" },
+  { id: 6, name: "Next.js", category: "foront", src: "/skill/next.svg" },
+  {
+    id: 7,
+    name: "Tailwind CSS",
+    category: "library",
+    src: "/skill/tailwindcss.svg",
+  },
+  { id: 8, name: "Figma", category: "design", src: "/skill/figma.svg" },
+  {
+    id: 9,
+    name: "Bootstrap",
+    category: "library",
+    src: "/skill/bootstrap.svg",
+  },
+  { id: 10, name: "MySQL", category: "back", src: "/skill/mysql.svg" },
+  { id: 11, name: "Mariadb", category: "back", src: "/skill/mariadb.svg" },
+  {
+    id: 12,
+    name: "tanstack-query",
+    category: "library",
+    src: "/skill/tanstack-query.svg",
+  },
+  {
+    id: 13,
+    name: "React Form Hook",
+    category: "library",
+    src: "/skill/react-hook-form.svg",
+  },
+  { id: 14, name: "Zustand", category: "library", src: "/skill/zustand.svg" },
+  {
+    id: 15,
+    name: "Shadcn UI",
+    category: "library",
+    src: "/skill/shadcn-ui.svg",
+  },
+  { id: 16, name: "JQuery", category: "front", src: "/skill/jquery.svg" },
+];

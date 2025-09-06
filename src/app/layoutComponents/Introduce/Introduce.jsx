@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Introduce() {
   return (
-    <div className="text-center mb-20">
+    <div className="text-center my-20">
       {/* 타이틀 */}
       <h1 className=" text-5xl font-semibold leading-[1.3]">
         안녕하세요.
