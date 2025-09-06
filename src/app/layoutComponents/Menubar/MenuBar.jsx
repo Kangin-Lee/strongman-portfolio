@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { menuItems } from "@/app/layoutComponents/Menubar/data/menuItem";
 import Link from "next/link";
+import { menuItems } from "./data/menuItem";
 
 export default function MenuBar() {
   return (

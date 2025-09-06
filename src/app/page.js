@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Introduce from "./layoutComponents/Introduce/Introduce";
-import MenuBar from "./layoutComponents/MenuBar/MenuBar";
 import CoreCompetencies from "./layoutComponents/CoreCompetencies/CoreCompetencies";
 import ContactInfo from "./layoutComponents/ContactInfo/ContactInfo";
 import EducationSection from "./layoutComponents/EducationSection/EducationSection";
 import Blog from "./layoutComponents/Blog/Blog";
 import SkillStack from "./layoutComponents/SkillStack/SkillStack";
+import MenuBar from "./layoutComponents/Menubar/MenuBar";
 
 export default function Home() {
   return (
