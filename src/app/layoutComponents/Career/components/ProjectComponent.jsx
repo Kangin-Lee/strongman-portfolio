@@ -1,7 +1,6 @@
-// 경력 사항 아이템 컴포넌트
+// 프로젝트 사항 아이템 컴포넌트
 
-import { ArrowRight, Asterisk } from "lucide-react";
-import { careerData } from "../data/careerData";
+import { Asterisk } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -9,28 +8,26 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import Image from "next/image";
+import { projectData } from "../data/projectData";
 
-export default function CareerComponent() {
+export default function ProjectComponent() {
   return (
     <div>
-      {/* careerData 배열을 map 함수로 순회하며 각 항목을 렌더링 */}
-      {careerData.map((item) => (
+      {/* projectData 배열을 map 함수로 순회하며 각 항목을 렌더링 */}
+      {projectData.map((item) => (
         <div className="flex items-start gap-8 mb-8" key={item.id}>
           {/* 날짜 들어가는 영역 */}
           <section className="flex items-center gap-2 text-mygray">
-            <Asterisk
-              size={16}
-              className={item.status === "ing" ? "stroke-myblue" : ""}
-            />
+            <Asterisk size={16} />
             <p className="w-[145px] text-start">{item.date}</p>
           </section>
 
           {/* 메인 컨텐츠 영역 */}
           <section className="flex flex-col text-start gap-1">
-            {/* 경력 타이틀 */}
+            {/* 프로젝트 타이틀 */}
             <h1 className="font-semibold text-xl">{item.title}</h1>
 
-            {/* 경력 설명 */}
+            {/* 프로젝트 설명 */}
             <p className="text-mygray">{item.description}</p>
 
             {/* 사용 기술 스택 */}
@@ -50,7 +47,7 @@ export default function CareerComponent() {
             {/* 업무 리스트 */}
             <Accordion type="single" collapsible>
               <AccordionItem value="item-1">
-                <AccordionTrigger>담당 업무 보기</AccordionTrigger>
+                <AccordionTrigger>주요 업무 보기</AccordionTrigger>
                 <AccordionContent>
                   <div className="bg-foreground/5 p-4 rounded-md">
                     <ul className="list-disc pl-4 text-sm font-light leading-relaxed">

@@ -5,6 +5,7 @@ export const careerData = [
     id: 1, // 각 항목을 구분할 고유 ID (선택 사항이지만 React list에선 'key'로 사용 권장)
     date: "2023.12 ~ 현재",
     title: "아이옵스",
+    status: "ing",
     description: "AI 기반 위성 지상 시스템 소프트웨어 개발 스타트업",
     skill: [
       "react.svg",
@@ -19,15 +20,16 @@ export const careerData = [
       "figma.svg",
     ],
     details: [
-      "총점 4.5점 만점에 4.42 학점으로 대전대학교 컴퓨터정보통신공학과 수석 졸업",
-      "C, Java를 포함한 핵심 프로그래밍 언어 및 자료구조, 알고리즘 등 탄탄한 컴퓨터 과학(CS) 기초 지식 습득",
-      "대전대학교 HRD 사업단 온디바이스 AI 응용시스템 개발자 과정 수료",
+      "Figma를 이용한 사용자 중심 UI/UX 설계 및 JQuery, Next.js를 이용한 반응형 웹 개발",
+      "React Hook Form과 Zod 스키마를 활용하여 복잡한 입력 폼에 대한 클라이언트 측 유효성 검증 시스템을 구축",
+      "회사 아이덴티티가 반영된 UI 컴포넌트 스타일 가이드를 제작 및 디자인 시스템을 구축",
     ],
   },
   {
     id: 2,
     date: "2023.01 ~ 2023.02",
     title: "지엔소프트",
+    status: "past",
     description: "IT 서비스 및 SI(시스템 통합) 전문 기업",
     skill: [
       "springboot.svg",
@@ -37,9 +39,9 @@ export const careerData = [
       "jquery.svg",
     ],
     details: [
-      "JAVA, Python 프로그래밍 이해 및 활용",
-      "머신러닝/딥러닝 기반 인공지능 기술 학습",
-      "안드로이드 스튜디오를 이용한 앱 개발 경험",
+      "자바스크립트 기본 문법, 함수, API 활용법 등의 웹 개발 기본기 습득 및 활용",
+      "jQuery를 활용하여 게시판 UI를 개발하고, 스프링을 이용한 게시판 서버 개발",
+      "MySQL을 활용한 CRUD(생성, 읽기, 업데이트, 삭제) 기능 개발 및 전체 프로젝트 배포",
     ],
   },
 ];
