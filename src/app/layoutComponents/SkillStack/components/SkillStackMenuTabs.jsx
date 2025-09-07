@@ -5,7 +5,8 @@ import AllSkillTab from "./tabs/AllSkillTab";
 import FrontSkillTab from "./tabs/FrontSkillTab";
 import BackSkillTab from "./tabs/BackSkillTab";
 import LibrarySkillTab from "./tabs/LibrarySkillTab";
-import DesignSkillTab from "./tabs/DesignSkillTab";
+import DesignSkillTab from "./tabs/EtcSkillTab";
+import EtcSkillTab from "./tabs/EtcSkillTab";
 
 export default function SkillStackMenuTabs() {
   return (
@@ -15,7 +16,7 @@ export default function SkillStackMenuTabs() {
         <TabsTrigger value="front">프론트엔드</TabsTrigger>
         <TabsTrigger value="back">백엔드</TabsTrigger>
         <TabsTrigger value="library">라이브러리</TabsTrigger>
-        <TabsTrigger value="design">디자인</TabsTrigger>
+        <TabsTrigger value="etc">기타</TabsTrigger>
       </TabsList>
 
       {/* 전체 탭 */}
@@ -38,9 +39,9 @@ export default function SkillStackMenuTabs() {
         <LibrarySkillTab />
       </TabsContent>
 
-      {/* 디자인 탭 */}
-      <TabsContent value="design">
-        <DesignSkillTab />
+      {/* 기타 탭 */}
+      <TabsContent value="etc">
+        <EtcSkillTab />
       </TabsContent>
     </Tabs>
   );

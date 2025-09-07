@@ -6,6 +6,7 @@ import EducationSection from "./layoutComponents/EducationSection/EducationSecti
 import Blog from "./layoutComponents/Blog/Blog";
 import SkillStack from "./layoutComponents/SkillStack/SkillStack";
 import MenuBar from "./layoutComponents/Menubar/MenuBar";
+import Career from "./layoutComponents/Career/Career";
 
 export default function Home() {
   return (
@@ -22,6 +23,9 @@ export default function Home() {
 
         {/* 기술스택 */}
         <SkillStack />
+
+        {/* 경력사항 */}
+        <Career />
 
         {/* 블로그 */}
         <Blog />

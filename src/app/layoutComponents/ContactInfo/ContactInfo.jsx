@@ -8,8 +8,9 @@ export default function ContactInfo() {
       data-aos="fade-up"
       data-aos-anchor-placement="top-bottom"
       data-aos-once="true"
+      className="mb-20"
     >
-      <p className="text-center text-3xl mb-8 font-[500]">
+      <p className="text-center text-3xl mb-8 font-[600]">
         감사합니다. <br /> 더 궁금한 점이 있다면 <br /> 연락 주세요.
       </p>
 

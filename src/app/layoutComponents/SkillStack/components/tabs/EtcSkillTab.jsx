@@ -6,12 +6,12 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 
-export default function DesignSkillTab() {
+export default function EtcSkillTab() {
   return (
     <div>
       <div className="flex flex-wrap justify-center gap-6">
         {skillItems
-          .filter((item) => item.category === "design") // design 카테고리 필터링
+          .filter((item) => item.category === "etc") // etc 카테고리 필터링
           .map((item, index) => (
             <Tooltip key={item.name}>
               <TooltipTrigger>
