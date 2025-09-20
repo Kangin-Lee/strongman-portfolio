@@ -34,9 +34,9 @@ export default function CareerComponent() {
             <p className="text-mygray">{item.description}</p>
 
             {/* 사용 기술 스택 */}
-            <div className="flex flex-wrap gap-2 mt-2">
+            {/* <div className="flex flex-wrap gap-2 mt-2">
               {item.skill.map((tech, index) => (
-                <Image
+                <img
                   key={index}
                   src={`/skill/${tech}`}
                   alt={tech}
@@ -45,7 +45,7 @@ export default function CareerComponent() {
                   className="rounded-sm"
                 />
               ))}
-            </div>
+            </div> */}
 
             {/* 업무 리스트 */}
             <Accordion type="single" collapsible>

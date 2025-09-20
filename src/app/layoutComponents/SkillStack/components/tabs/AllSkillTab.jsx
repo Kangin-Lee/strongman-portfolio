@@ -13,7 +13,7 @@ export default function AllSkillTab() {
         {skillItems.map((item, index) => (
           <Tooltip key={item.name}>
             <TooltipTrigger>
-              <Image
+              <img
                 src={item.src}
                 alt={item.name}
                 width={40}

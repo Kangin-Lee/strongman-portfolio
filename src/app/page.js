@@ -7,34 +7,38 @@ import Blog from "./layoutComponents/Blog/Blog";
 import SkillStack from "./layoutComponents/SkillStack/SkillStack";
 import MenuBar from "./layoutComponents/Menubar/MenuBar";
 import Career from "./layoutComponents/Career/Career";
+import Projects from "./layoutComponents/Projects/Projects";
 
 export default function Home() {
   return (
     <div>
-      <main className=" w-full min-w-96 max-w-screen-lg min-h-screen mx-auto px-5 md:px-8 lg:px-10 flex flex-col items-center relative ">
-        {/* 소개 및 인사 글 컴포넌트 */}
-        <Introduce />
-
-        {/* 메뉴바 컴포넌트 */}
+      <main className="w-full min-w-96 max-w-screen-lg min-h-screen mx-auto px-5 md:px-8 lg:px-10 flex flex-col items-center relative">
         <MenuBar />
-
-        {/* 핵심역량 */}
-        <CoreCompetencies />
-
-        {/* 기술스택 */}
-        <SkillStack />
-
-        {/* 경력사항 */}
-        <Career />
-
-        {/* 블로그 */}
-        <Blog />
-
-        {/* 교육 및 자격 */}
-        <EducationSection />
-
-        {/* 끝인사 + 연락처 + 메일 */}
-        <ContactInfo />
+        <div
+          id="home"
+          className="h-screen flex flex-col justify-center items-center"
+        >
+          <Introduce />
+        </div>
+        <div id="skills">
+          <CoreCompetencies />
+        </div>
+        <div id="tech">
+          <SkillStack />
+        </div>
+        <div id="experience">
+          <Career />
+        </div>
+        <div id="projects">
+          <Projects />
+        </div>
+        <div id="blog">
+          <Blog />
+        </div>
+        <div id="education">
+          <EducationSection />
+        </div>
+        <ContactInfo /> {/* 끝인사 + 연락처 + 메일 */}
       </main>
     </div>
   );
