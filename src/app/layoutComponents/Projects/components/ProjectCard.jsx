@@ -1,23 +1,26 @@
 import ProjectModal from "./ProjectModal";
 
-export default function ProjectCard() {
+export default function ProjectCard({ project }) {
   return (
-    <ProjectModal>
-      <div className="border rounded-md p-4 text-start flex flex-col gap-2 cursor-pointer">
+    <ProjectModal project={project}>
+      <div className="border rounded-md p-4 text-start flex flex-col gap-2 cursor-pointer hover:bg-gray-100 duration-200">
         {/* 아이콘 */}
-        <img src="/projectIcons/satellite.png" width={35} />
+        <img src={project.icon} width={35} />
 
         {/* 프로젝트 제목 */}
-        <div className="text-xl font-semibold">NEW WORCS</div>
+        <div className="text-xl font-semibold">{project.title}</div>
 
         {/* 프로젝트 설명 */}
-        <p className="text-sm mt-2">
-          고객사들의 요청 및 케어를 효율적으로 관리하는 시스템을 개편하는
-          프로젝트
-        </p>
+        <p className="text-sm mt-2">{project.intro}</p>
 
         {/* 기술 스택 */}
-        <div>기술 스택</div>
+        <div>
+          {project.techStack.map((tech, index) => (
+            <span key={index} className="text-xs bg-gray-200 px-2 py-1 rounded">
+              {tech}
+            </span>
+          ))}
+        </div>
       </div>
     </ProjectModal>
   );

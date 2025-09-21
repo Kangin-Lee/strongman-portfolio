@@ -1,8 +1,12 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import "./fonts.css";
 @config "../../tailwind.config.js";
 
 @custom-variant dark (&:is(.dark *));
+body {
+  font-family: "Pretendard", sans-serif;
+}
 
 @theme inline {
   --color-background: var(--background);

@@ -1,6 +1,7 @@
 // 프로젝트 상세
 
 import ProjectCard from "./components/ProjectCard";
+import { projectData } from "./data/projectData";
 
 export default function Projects() {
   return (
@@ -19,11 +20,9 @@ export default function Projects() {
 
       {/* 프로젝트 카드 map으로 보여주기*/}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+        {projectData.map((item) => (
+          <ProjectCard key={item.id} project={item} />
+        ))}
       </div>
     </div>
   );
