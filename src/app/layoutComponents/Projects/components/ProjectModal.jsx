@@ -63,18 +63,22 @@ export default function ProjectModal({ children, project }) {
               <p>{project.period}</p>
             </div>
 
-            <div>
-              <DialogDescription>관련링크</DialogDescription>
-              <p>
-                <Link
-                  href={project.links[0].url}
-                  target="_blank"
-                  className="underline hover:text-myblue duration-150"
-                >
-                  {project.links[0].label}
-                </Link>
-              </p>
-            </div>
+            {project.links &&
+              project.links.length > 0 &&
+              project.links[0].url && (
+                <div>
+                  <DialogDescription>관련링크</DialogDescription>
+                  <p>
+                    <Link
+                      href={project.links[0].url}
+                      target="_blank"
+                      className="underline hover:text-myblue duration-150"
+                    >
+                      {project.links[0].label}
+                    </Link>
+                  </p>
+                </div>
+              )}
           </div>
         </div>
 
