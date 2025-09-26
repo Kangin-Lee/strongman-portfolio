@@ -12,6 +12,7 @@ export default function CoreCard() {
           className=""
           data-aos="fade-up"
           data-aos-delay={item.fade}
+          data-aos-once="true"
         >
           <img
             src={item.img}

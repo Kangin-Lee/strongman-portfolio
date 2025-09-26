@@ -1,3 +1,8 @@
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import ProjectModal from "./ProjectModal";
 
 export default function ProjectCard({ project }) {
@@ -14,11 +19,22 @@ export default function ProjectCard({ project }) {
         <p className="text-sm mt-2">{project.intro}</p>
 
         {/* 기술 스택 */}
-        <div>
+        <div className="space-x-3">
           {project.techStack.map((tech, index) => (
-            <span key={index} className="text-xs bg-gray-200 px-2 py-1 rounded">
-              {tech}
-            </span>
+            <Tooltip key={tech.name}>
+              <TooltipTrigger>
+                <img
+                  src={tech.src}
+                  alt={tech.name}
+                  width={20}
+                  height={20}
+                  className="rounded shadow-xl cursor-pointer hover:shadow-none hover:translate-y-0.5 transition-transform duration-200"
+                />
+              </TooltipTrigger>
+              <TooltipContent>
+                <p className="text-sm">{tech.name}</p>
+              </TooltipContent>
+            </Tooltip>
           ))}
         </div>
       </div>

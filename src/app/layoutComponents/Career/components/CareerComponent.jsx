@@ -26,7 +26,7 @@ export default function CareerComponent() {
           </section>
 
           {/* 메인 컨텐츠 영역 */}
-          <section className="flex flex-col text-start gap-1">
+          <section className="flex flex-col text-start gap-1 w-full max-w-[540px]">
             {/* 경력 타이틀 */}
             <h1 className="font-semibold text-xl">{item.title}</h1>
 
@@ -34,7 +34,7 @@ export default function CareerComponent() {
             <p className="text-mygray">{item.description}</p>
 
             {/* 사용 기술 스택 */}
-            {/* <div className="flex flex-wrap gap-2 mt-2">
+            <div className="flex flex-wrap gap-2 mt-2">
               {item.skill.map((tech, index) => (
                 <img
                   key={index}
@@ -45,7 +45,7 @@ export default function CareerComponent() {
                   className="rounded-sm"
                 />
               ))}
-            </div> */}
+            </div>
 
             {/* 업무 리스트 */}
             <Accordion type="single" collapsible>

@@ -5,7 +5,40 @@ export const projectData = [
     icon: "/projectIcons/satellite.png",
     intro:
       "위성 관련 품질 문서 등의 데이터를 관리·분석하는 시스템 고도화 프로젝트",
-    techStack: ["JavaScript", "jQuery", "Java", "Spring Boot", "Bootstrap"],
+    techStack: [
+      {
+        name: "JavaScript",
+        src: "/skill/javascript.png",
+      },
+      {
+        name: "jQuery",
+        src: "/skill/jquery.png",
+      },
+      {
+        name: "Thymeleaf",
+        src: "/skill/thymleaf.png",
+      },
+      {
+        name: "Java",
+        src: "/skill/java.png",
+      },
+      {
+        name: "Spring Boot",
+        src: "/skill/springboot.png",
+      },
+      {
+        name: "MariaDB",
+        src: "/skill/mariadb.png",
+      },
+      {
+        name: "Bootstrap",
+        src: "/skill/bootstrap.png",
+      },
+      {
+        name: "Figma",
+        src: "/skill/figma.png",
+      },
+    ],
     team: {
       members: 3,
       roles: { Developer: 3 },
@@ -64,7 +97,48 @@ export const projectData = [
     icon: "/projectIcons/setting.png",
     intro:
       "고객사들의 요청 및 케어를 효율적으로 관리하는 시스템을 개편하는 프로젝트",
-    techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Shadcn UI"],
+    techStack: [
+      {
+        name: "JavaScript",
+        src: "/skill/javaScript.png",
+      },
+      {
+        name: "Next.js",
+        src: "/skill/next.png",
+      },
+      {
+        name: "Tailwind CSS",
+        src: "/skill/tailwindcss.png",
+      },
+      {
+        name: "Shadcn UI",
+        src: "/skill/shadcn-ui.png",
+      },
+      {
+        name: "React Hook Form",
+        src: "/skill/react-hook-form.png",
+      },
+      {
+        name: "Zustand",
+        src: "/skill/zustand.png",
+      },
+      {
+        name: "tanstack-query",
+        src: "/skill/tanstack-query.png",
+      },
+      {
+        name: "Spring Boot",
+        src: "/skill/springboot.png",
+      },
+      {
+        name: "MySQL",
+        src: "/skill/mysql.png",
+      },
+      {
+        name: "Figma",
+        src: "/skill/figma.png",
+      },
+    ],
     team: {
       members: 4,
       roles: { FE: 2, BE: 2 },
@@ -142,7 +216,32 @@ export const projectData = [
     icon: "/projectIcons/palette.png",
     intro:
       "아이옵스의 아이덴티티를 반영한 UI 컴포넌트 스타일 가이드 제작 및 디자인 시스템 구축 프로젝트",
-    techStack: ["Next.js", "Javascript", "Tailwind CSS", "Shadcn UI"],
+    techStack: [
+      {
+        name: "JavaScript",
+        src: "/skill/javaScript.png",
+      },
+      {
+        name: "Next.js",
+        src: "/skill/next.png",
+      },
+      {
+        name: "Tailwind CSS",
+        src: "/skill/tailwindcss.png",
+      },
+      {
+        name: "Shadcn UI",
+        src: "/skill/shadcn-ui.png",
+      },
+      {
+        name: "React Hook Form",
+        src: "/skill/react-hook-form.png",
+      },
+      {
+        name: "Zustand",
+        src: "/skill/zustand.png",
+      },
+    ],
     team: {
       members: 1,
       roles: { FE: 1 },
@@ -172,6 +271,7 @@ export const projectData = [
         details: [
           "Figma로 구현된 디자인 시안을 참고하여 재사용 가능한 컴포넌트들의 스타일 정의",
         ],
+        image: "/project/style_guide/main.png",
       },
     ],
     achievements: [
@@ -187,6 +287,7 @@ export const projectData = [
           "명확한 디자인 시스템을 확립하여 프로젝트 내 디자인 오류 및 스타일 충돌을 현저히 감소시킴",
           "이는 개발 과정의 효율성을 증대시키고 최종 제품의 품질 안정성을 강화하는 핵심적인 성과로 이어짐",
         ],
+        image: "/project/style_guide/button-component.png",
       },
     ],
   },

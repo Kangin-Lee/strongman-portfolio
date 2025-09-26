@@ -20,19 +20,29 @@ export default function SkillStackMenuTabs() {
       </TabsList>
 
       {/* 전체 탭 */}
-      <TabsContent value="all">{/* <AllSkillTab /> */}</TabsContent>
+      <TabsContent value="all">
+        <AllSkillTab />
+      </TabsContent>
 
       {/* 프론트 탭 */}
-      <TabsContent value="front">{/* <FrontSkillTab /> */}</TabsContent>
+      <TabsContent value="front">
+        <FrontSkillTab />
+      </TabsContent>
 
       {/* 백엔드 탭 */}
-      <TabsContent value="back">{/* <BackSkillTab /> */}</TabsContent>
+      <TabsContent value="back">
+        <BackSkillTab />
+      </TabsContent>
 
       {/* 라이브러리 탭 */}
-      <TabsContent value="library">{/* <LibrarySkillTab /> */}</TabsContent>
+      <TabsContent value="library">
+        <LibrarySkillTab />
+      </TabsContent>
 
       {/* 기타 탭 */}
-      <TabsContent value="etc">{/* <EtcSkillTab /> */}</TabsContent>
+      <TabsContent value="etc">
+        <EtcSkillTab />
+      </TabsContent>
     </Tabs>
   );
 }
